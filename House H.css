@@ -1,0 +1,187 @@
+body{
+    background-color: lightblue;
+    font family:tahoma, sans-serif;
+    color: #131741;
+    line-height: 1.8;
+    
+}
+
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:rgb(71, 164, 198);
+    color:bluewhite;
+    padding: 1rem 2rem;
+    position:sticky;
+    top:0;
+    z-index:10;
+    
+
+}
+.logo {
+    font-size:24px;
+    font-weight:bold;
+}
+ .nav-links{
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links a{
+    text-decoration: none;
+    color: rgb(184, 48, 48);
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover{
+    color: #80973c;
+  }
+
+.menu-btn{
+    display: none;
+    background:none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.container{
+    text-align: center;
+}
+.photos{
+    border-radius: 10px;
+}
+.toppart h1{
+  text-align: center;
+  color: #131741;
+}
+.Upthere h1{
+  text-align: center;
+  color: #131741;
+}
+.btn {
+    background-color: #907cb7;
+    color: #f7f1f1;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #db2a2a;
+    color: #86c54f;
+  }
+     @media (max-width: 600px) {
+        .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        }
+    
+        .nav-links.active {
+        display: flex;
+        }
+    
+        .menu-btn {
+        display: block;
+        }
+    }
+     .products{
+     text-align: center;
+     padding: 1.5rem;   
+    }
+
+    .products h2{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    @media screen and (max-width: 600px){
+        .product-grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+
+    .house-card{
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        width: 100%;
+        max-width: 300px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .house-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .house-card img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .house-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+    .house-card p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 1rem;
+    }  
+
+.footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    font-size: 2.9rem;
+}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  
+}
